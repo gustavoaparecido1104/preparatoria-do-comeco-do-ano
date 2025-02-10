@@ -37,8 +37,9 @@ body {
     width: 100%;
     text-align: center;
     background: white;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Espaço para distanciar o nome da demanda das outras imagens */
     border-radius: 5px;
+    margin-top: 10px; /* Levanta o campo de nome da demanda */
 }
 
 .item {
