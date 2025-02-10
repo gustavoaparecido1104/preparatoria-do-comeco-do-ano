@@ -6,11 +6,27 @@
 
 body {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
     height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 900px;
+}
+
+.editor-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
 }
 
 .nome-demanda {
@@ -21,30 +37,8 @@ body {
     width: 100%;
     text-align: center;
     background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.container {
-    width: 100%;
-    max-width: 900px;
-    height: 80vh;
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.editor-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    background: white;
-    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    flex-grow: 1;
 }
 
 .item {
@@ -69,4 +63,12 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: none;
+}
+
+.last {
+    justify-content: flex-end;
+}
+
+.last img {
+    order: 1;  /* Coloca a imagem no final */
 }
